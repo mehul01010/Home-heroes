@@ -1,0 +1,153 @@
+
+
+/* Header adjustments */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 15px;
+  background-color: #fff;
+  border-bottom: 2px solid #ccc;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 150px;
+  margin-right: 10px;
+  background-color: red;
+  background-blend-mode: multiply;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 50px;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #e23e2c;
+}
+
+
+
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, #83a4d4, #b6fbff);
+  display: flex;
+  justify-content: center; /* Center everything horizontally */
+  align-items: center; /* Center everything vertically */
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the body takes the full height */
+  position: relative;
+}
+
+body{
+  overflow-x: auto;
+}
+
+/* Center the carousel container */
+.carousel {
+  width: 1700px; /* Adjust the width of the carousel */
+  height: 400px; /* Adjust the height of the carousel */
+  overflow: hidden;
+  position: relative;
+  margin: 20px auto; /* Center the carousel */
+
+
+  /* Set the background color just for the carousel */
+  border-radius: 8px; /* Optional: Add rounded corners */
+}
+
+.carousel-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  transition: transform 0.5s ease;
+  box-shadow: 0px 8px 8px rgb(3, 99, 155);
+}
+
+.carousel-list li {
+  width: 400px;
+  height: 300px;
+}
+
+.carousel-list img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*  this the main page heading */
+.maintext{
+   font-size: 50px;
+   margin-bottom: 2%;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   animation: fadeIn 2s ease-in-out;
+   color: #023241;
+   text-shadow: 2px  2px  #d2e008;
+}
+
+.subtitle{
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+/* Center the serve image at the bottom */
+.serve {
+  position: absolute;
+   /* Stick it to the bottom */
+  left: 50%; /* Move to the center horizontally */
+  transform: translateX(-50%); /* Adjust it back to the center */
+  width: 550px; /* Adjust the size of the image if needed */
+}
+
+.serveimg {
+  margin-top: 80%;
+}
+
+
+.bottom {
+  
+  justify-content: baseline;
+ 
+}
